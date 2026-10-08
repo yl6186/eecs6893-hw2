@@ -1,16 +1,4 @@
-"""HW2 Section 3 - Mini-project example: "Tech vs Crypto Risk Monitor"
-
-Data source : Yahoo Finance (yfinance), 6 months of daily prices for 5 assets
-Architecture: Airflow on a GCP VM -> pandas analytics -> CSV + PNG charts in ~/airflow/data/mini
-Analysis    : daily returns, 20-day rolling volatility (annualised), max drawdown,
-              correlation matrix, 20/50-day moving-average trend signal
-
-            fetch_prices
-           /            \\
-  compute_metrics     make_charts
-           \\            /
-            write_report
-"""
+"""HW2 Section 3: Tech vs Crypto Risk Monitor (yfinance, 5 assets, 6 months)."""
 import os
 from datetime import datetime, timedelta
 
