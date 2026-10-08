@@ -1,9 +1,4 @@
-"""HW2 Q2.1 - the 19-task DAG from the assignment figure.
-
-This one file creates TWO DAGs with identical tasks:
-  * q21_manual     - schedule=None, you trigger it by hand (Q2.1 parts 1 and 2)
-  * q21_every_30m  - first run right after you unpause it, then every 30 minutes (Q2.1 part 3)
-"""
+"""HW2 Q2.1: q21_manual (manual trigger) and q21_every_30m (every 30 min)."""
 import os
 import sys
 import time
